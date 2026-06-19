@@ -1,156 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LENTO — Coming soon</title>
-  <style>
-    *,*::before,*::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html, body {
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-    }
-
-    body {
-      background: #82aedd;
-    }
-
-    :root {
-      --stretch-delay: 0.5s;
-      --stretch-duration: 2.8s;
-    }
-
-    .content {
-      position: relative;
-      z-index: 1;
-      display: flex;
-      flex-direction:column;
-      align-items: center;
-      width: 100%;
-      height: 100%;
-      padding: 2rem;
-      color: rgba(255, 255, 255, 0.88);
-      text-transform: uppercase;
-    }
-
-    section {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 1.75rem;
-      font-family: system-ui, -apple-system, sans-serif;
-    }
-
-    .logo {
-      width: min(88vw, 720px);
-      height: auto;
-      opacity: 0;
-      animation: logo-in 0.6s ease-out 0.2s forwards;
-    }
-
-    .tagline {
-      font-size: clamp(0.85rem, 2.5vw, 1.05rem);
-      font-weight: 400;
-      letter-spacing: 0.35em;
-      opacity: 0;
-      transform: translateY(8px);
-      animation: tagline-in 0.7s ease-out calc(var(--stretch-delay) + var(--stretch-duration)) forwards;
-    }
-
-    footer {
-      position: absolute;
-      bottom: 20px;
-      left: 0;
-      right: 0;
-      display: flex;
-      justify-content: space-between;
-      padding: 0 2rem;
-      color: #e30d25;
-      font-family: 'Roboto', sans-serif;
-    }
-
-    footer p:last-child {
-      font-weight: bold;
-    }
-
-    @keyframes tagline-in {
-      from { opacity: 0; transform: translateY(8px); }
-      to   { opacity: 1; transform: translateY(0); }
-    }
-
-    @keyframes logo-in {
-      from { opacity: 0; transform: scale(0.97); }
-      to   { opacity: 1; transform: scale(1); }
-    }
-
-    /* E stretch animation */
-    .e-bars {
-      transform-box: fill-box;
-      transform-origin: left center;
-      transform: scaleX(1);
-      animation: stretch-e var(--stretch-duration) cubic-bezier(0.22, 1, 0.36, 1) var(--stretch-delay) forwards;
-    }
-
-    .nto-group {
-      animation: slide-nto var(--stretch-duration) cubic-bezier(0.22, 1, 0.36, 1) var(--stretch-delay) forwards;
-    }
-
-    @keyframes stretch-e {
-      from { transform: scaleX(1); }
-      to   { transform: scaleX(10.35); }
-    }
-
-    @keyframes slide-nto {
-      from { transform: translateX(0); }
-      to   { transform: translateX(344px); }
-    }
-  </style>
-
-  <link rel="icon" type="image/png" href="img/lento_favicon.png">
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-
+  <meta name="description" content="LEEENTO — Próximamente" />
+  <title>LEEENTO — Próximamente</title>
+  <meta property="og:title" content="LEEENTO">
+  <meta property="og:description" content="LEEENTO - Próximamente">
+  <meta property="og:image" content="https://leeento.es/img/lento_logo.jpg">
+  <meta property="og:url" content="https://leeento.es">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="icon" type="image/png" href="img/lento_favicon.png" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <main class="content">
-    <section>
-      <svg class="logo" viewBox="0 0 867 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="LENTO">
-      <g fill="#e30d25">
-        <!-- L -->
-        <path d="M0 8 H44 V118 H110 V150 H0 Z" />
-        <!-- E  -->
-        <!-- stem -->
-        <rect x="88" y="8" width="44" height="142" />
-        <!-- bars -->
-        <g class="e-bars">
-          <rect x="131" y="8" width="35" height="36" />
-          <rect x="131" y="62" width="35" height="36" />
-          <rect x="131" y="114" width="39" height="36" />
+    <section aria-labelledby="site-title">
+      <h1 id="site-title" class="visually-hidden">LEEENTO</h1>
+      <svg class="logo" viewBox="0 0 867 150" aria-hidden="true" focusable="false">
+        <g fill="#e30d25">
+          <!-- L -->
+          <path d="M0 8 H44 V118 H110 V150 H0 Z" />
+          <!-- E  -->
+          <!-- stem -->
+          <rect x="88" y="8" width="44" height="142" />
+          <!-- bars -->
+          <g class="e-bars">
+            <rect x="131" y="8" width="35" height="36" />
+            <rect x="131" y="62" width="35" height="36" />
+            <rect x="131" y="114" width="39" height="36" />
+          </g>
+          <!-- N T O -->
+          <g class="nto-group">
+            <!-- N  -->
+            <path d="M 160 150 L 160 8 L 215 8 L 235 73 L 235 8 L 290 8 L 290 150 L 235 150 L 215 87 L 215 150 Z" />
+            <!-- T -->
+            <path d="M260 8 H450 L413 42 V47 H364 V150 H317 V47 H260 Z " />
+            <!-- O -->
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M450 8 A 71 71 0 1 1 449.99 8 M450 105 A 25 25 0 1 0 449.99 105 Z"/>
+          </g>
         </g>
-        <!-- N T O -->
-        <g class="nto-group">
-          <!-- N  -->
-          <path d="M 160 150 L 160 8 L 215 8 L 235 73 L 235 8 L 290 8 L 290 150 L 235 150 L 215 87 L 215 150 Z" />
-          <!-- T -->
-          <path d="M260 8 H450 L413 42 V47 H364 V150 H317 V47 H260 Z " />
-          <!-- O -->
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M450 8 A 71 71 0 1 1 449.99 8 M450 105 A 25 25 0 1 0 449.99 105 Z"/>
-        </g>
-      </g>
-    </svg>
-      <p class="tagline">Coming soon...</p>
-  </section>
-  <footer>
-      <p>&copy 2026 LEEENTO</p>
-      <p>hola@leeento.es</p>
-  </footer>
+      </svg>
+      <p class="tagline">Próximamente...</p>
+    </section>
   </main>
+  <footer>
+    <p>&copy; 2026 LEEENTO</p>
+    <p><a href="mailto:hola@leeento.es">hola@leeento.es</a></p>
+  </footer>
 </body>
 </html>
